@@ -15,7 +15,7 @@ Predicts breast cancer subtype (Basal, Her2, LumA, LumB) from a small multi-omic
 
 ## Run
 ```bash
-pip install streamlit pandas scikit-learn joblib openpyxl seaborn matplotlib requests
+pip install -r requirements.txt
 streamlit run app.py
 ```
 The optional LLM explanation needs a Groq API key in `app.py`. The cohort plots need `final_merged_df.csv` (not included).
