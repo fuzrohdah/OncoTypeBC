@@ -10,7 +10,7 @@ st.markdown("<div style='text-align: right'><a href='#faq'><button style='backgr
 
 
 # Load trained model
-model = joblib.load(r"C:\Users\haris\OneDrive\Desktop\PROJECT\rf_model.pkl")
+model = joblib.load("rf_model.pkl")
 
 #st.title("OncoType: An Integrated Multi-Omic Classifier for Breast Cancer Subtyping")
 
@@ -99,7 +99,7 @@ if uploaded_file:
 st.markdown("**Project Workflow:** ")
 
 
-st.image(r"C:\Users\haris\OneDrive\Desktop\PROJECT\cancer.png", caption="Fig. Project Workflow", use_container_width=True)
+st.image("flowchart.png", caption="Fig. Project Workflow", use_container_width=True)
 
 
 
@@ -125,7 +125,7 @@ st.markdown("""
 
 
 # Load trained data for some insights
-merged_df = pd.read_csv(r"C:\Users\haris\OneDrive\Desktop\PROJECT\final_merged_df.csv", sep=",")
+merged_df = pd.read_csv("final_merged_df.csv", sep=",")
 # Stats
 st.subheader("Exploratory Overview of Training Data")
 st.markdown("**BRCA Subtype Distribution:**")
